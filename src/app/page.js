@@ -18,9 +18,8 @@ const Portfolios1 = dynamic(() => import("@/components/sections/portfolios/Portf
 const Services1 = dynamic(() => import("@/components/sections/services/Services1"));
 const Testimonials1 = dynamic(() => import("@/components/sections/testimonials/Testimonials1"));
 
-const ClientWrapper = dynamic(
-	() => import("@/components/shared/wrappers/ClientWrapper"),
-	{ ssr: false }
+const ClientWrapper = dynamic(() =>
+	import("@/components/shared/wrappers/ClientWrapper")
 );
 
 export default function Home() {
