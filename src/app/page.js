@@ -1,27 +1,34 @@
 import Footer from "@/components/layout/footer/Footer";
 import Header from "@/components/layout/header/Header";
+import dynamic from "next/dynamic";
+
 import About1 from "@/components/sections/about/About1";
-import Blogs1 from "@/components/sections/blogs/Blogs1";
 import Brands1 from "@/components/sections/brands/Brands1";
-import Contact2 from "@/components/sections/contacts/Contact2";
-import Cta from "@/components/sections/cta/Cta";
-import Faq2 from "@/components/sections/faq/Faq2";
 import Features from "@/components/sections/features/Features";
-import Funfact1 from "@/components/sections/funfacts/Funfact1";
 import Hero from "@/components/sections/hero/Hero";
-import Portfolios1 from "@/components/sections/portfolios/Portfolios1";
-import Services1 from "@/components/sections/services/Services1";
-import Testimonials1 from "@/components/sections/testimonials/Testimonials1";
+
+const Blogs1 = dynamic(() => import("@/components/sections/blogs/Blogs1"));
+const Contact2 = dynamic(() => import("@/components/sections/contacts/Contact2"));
+const Cta = dynamic(() => import("@/components/sections/cta/Cta"));
+const Faq2 = dynamic(() => import("@/components/sections/faq/Faq2"));
+const Funfact1 = dynamic(() => import("@/components/sections/funfacts/Funfact1"));
+const Portfolios1 = dynamic(() => import("@/components/sections/portfolios/Portfolios1"));
+const Services1 = dynamic(() => import("@/components/sections/services/Services1"));
+const Testimonials1 = dynamic(() => import("@/components/sections/testimonials/Testimonials1"));
 import BackToTop from "@/components/shared/others/BackToTop";
 import HeaderSpace from "@/components/shared/others/HeaderSpace";
-import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
+
+const ClientWrapper = dynamic(
+	() => import("@/components/shared/wrappers/ClientWrapper"),
+	{ ssr: false }
+);
 
 export default function Home() {
 	return (
 		<div>
 			<BackToTop />
-			<Header />
 			<Header isStickyHeader={true} />
+			{/* <Header isStickyHeader={true} /> */}
 			<div id="smooth-wrapper">
 				<div id="smooth-content">
 					<main>

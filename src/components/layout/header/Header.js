@@ -43,37 +43,34 @@ const Header = ({
 
 			{/* Search Popup --> */}
 			<div
-				className={`search-popup-overlay ${
-					isSearchOpen ? "search-popup-overlay-open" : ""
-				}`}
+				className={`search-popup-overlay ${isSearchOpen ? "search-popup-overlay-open" : ""
+					}`}
 				onClick={() => setIsSearchOpen(false)}
 			></div>
 			<header
-				className={`header-area ${
-					headerType === 10
+				className={`header-area ${headerType === 10
 						? "header-3 h10-header"
 						: headerType === 9
-						? isStickyHeader
-							? "header-3"
-							: "h9-header"
-						: headerType === 8
-						? "header-1 h8-header"
-						: headerType === 7
-						? "header-2 h7-header"
-						: headerType === 6
-						? "header-1 h6-header"
-						: headerType === 5
-						? `header-2 ${isStickyHeader ? "" : "header-5"}`
-						: headerType === 3
-						? "header-3"
-						: headerType === 2
-						? "header-2"
-						: "header-1"
-				} section-gap-x ${
-					isStickyHeader
-						? `header-duplicate header-sticky ${isSticky ? "sticky" : ""}`
+							? isStickyHeader
+								? "header-3"
+								: "h9-header"
+							: headerType === 8
+								? "header-1 h8-header"
+								: headerType === 7
+									? "header-2 h7-header"
+									: headerType === 6
+										? "header-1 h6-header"
+										: headerType === 5
+											? `header-2 ${isStickyHeader ? "" : "header-5"}`
+											: headerType === 3
+												? "header-3"
+												: headerType === 2
+													? "header-2"
+													: "header-1"
+					} section-gap-x ${isStickyHeader
+						? `header-absolute ${isSticky ? "header-sticky sticky" : ""}`
 						: "header-absolute"
-				} `}
+					} `}
 			>
 				{isHeaderTop && <HeaderTop type={topbarType} />}
 				{headerType === 8 && !isStickyHeader ? (
@@ -107,18 +104,16 @@ const Header = ({
 									) : (
 										<div className="header-search">
 											<button
-												className={`search  ${
-													isSearchOpen ? "search-hide" : ""
-												}`}
+												className={`search  ${isSearchOpen ? "search-hide" : ""
+													}`}
 												onClick={() => setIsSearchOpen(true)}
 											>
 												<i className="tji-search"></i>
 											</button>
 											<button
 												type="button"
-												className={`search_close_btn ${
-													isSearchOpen ? "close-show" : ""
-												}`}
+												className={`search_close_btn ${isSearchOpen ? "close-show" : ""
+													}`}
 												onClick={() => setIsSearchOpen(false)}
 											>
 												<svg
@@ -154,9 +149,9 @@ const Header = ({
 										""
 									)}
 									{headerType === 3 ||
-									headerType === 8 ||
-									headerType === 9 ||
-									headerType === 10 ? (
+										headerType === 8 ||
+										headerType === 9 ||
+										headerType === 10 ? (
 										""
 									) : (
 										<div

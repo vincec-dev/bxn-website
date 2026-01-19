@@ -1,6 +1,7 @@
 "use client";
 
 import getBrands from "@/libs/getBrands";
+import Image from "next/image";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -24,15 +25,17 @@ const BrandSlider1 = ({ className }) => {
 		>
 			{brands?.length
 				? brands?.map(({ img }, idx) => (
-						<SwiperSlide key={idx} className="client-item">
-							<div className="client-logo">
-								<img
-									src={img ? img : "/images/brands/brand-1.webp"}
-									alt="Brand"
-								/>
-							</div>
-						</SwiperSlide>
-				  ))
+					<SwiperSlide key={idx} className="client-item">
+						<div className="client-logo">
+							<Image
+								src={img ? img : "/images/brands/brand-1.webp"}
+								alt="Brand"
+								width={150}
+								height={50}
+							/>
+						</div>
+					</SwiperSlide>
+				))
 				: ""}
 		</Swiper>
 	);

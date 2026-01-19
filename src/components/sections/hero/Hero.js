@@ -26,7 +26,7 @@ const Hero = () => {
 						</div>
 					</div>
 					<div className="banner-shape">
-						<img src="/images/shape/pattern-bg.webp" alt="" />
+						<Image src="/images/shape/pattern-bg.webp" alt="" width={500} height={500} />
 					</div>
 				</div>
 				<div className="banner-right-box">
@@ -35,6 +35,7 @@ const Hero = () => {
 							data-speed="0.8"
 							src="/images/hero/hero-img.webp"
 							alt=""
+							priority
 							width={945}
 							height={793}
 						/>
