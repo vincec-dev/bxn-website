@@ -7,13 +7,13 @@ const Hero = () => {
 			<div className="banner-area">
 				<div className="banner-left-box">
 					<div className="banner-content">
-						<span className="sub-title wow fadeInDown" data-wow-delay=".2s">
+						<span className="sub-title" data-wow-delay=".2s">
 							<i className="tji-excellence"></i> Recognized for Excellence
 						</span>
-						<h1 className="banner-title title-anim">
+						<h1 className="banner-title">
 							Driving Excellence Through Evolution and <span>Trust.</span>
 						</h1>
-						<div className="banner-desc-area wow fadeInUp" data-wow-delay=".7s">
+						<div className="banner-desc-area" data-wow-delay=".7s">
 							<Link className="banner-link" href="/about">
 								<span>
 									<i className="tji-arrow-right-big"></i>
@@ -44,7 +44,7 @@ const Hero = () => {
 						<div className="customers-box">
 							<div className="customers">
 								<ul>
-									<li className="wow fadeInLeft" data-wow-delay=".5s">
+									<li data-wow-delay=".5s">
 										<Image
 											src="/images/testimonial/client-1.webp"
 											alt=""
@@ -52,7 +52,7 @@ const Hero = () => {
 											height={89}
 										/>
 									</li>
-									<li className="wow fadeInLeft" data-wow-delay=".6s">
+									<li data-wow-delay=".6s">
 										<Image
 											src="/images/testimonial/client-2.webp"
 											alt=""
@@ -60,7 +60,7 @@ const Hero = () => {
 											height={89}
 										/>
 									</li>
-									<li className="wow fadeInLeft" data-wow-delay=".7s">
+									<li data-wow-delay=".7s">
 										<Image
 											src="/images/testimonial/client-3.webp"
 											alt=""
@@ -68,7 +68,7 @@ const Hero = () => {
 											height={89}
 										/>
 									</li>
-									<li className="wow fadeInLeft" data-wow-delay=".8s">
+									<li data-wow-delay=".8s">
 										<span>
 											<i className="tji-plus"></i>
 										</span>
@@ -76,19 +76,19 @@ const Hero = () => {
 								</ul>
 							</div>
 							<div
-								className="customers-number wow fadeInUp"
+								className="customers-number"
 								data-wow-delay=".5s"
 							>
 								30K
 							</div>
-							<h6 className="customers-text wow fadeInUp" data-wow-delay=".5s">
+							<h6 className="customers-text" data-wow-delay=".5s">
 								Happy customer we have world-wide.
 							</h6>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div className="banner-scroll wow fadeInDown" data-wow-delay="2s">
+			<div className="banner-scroll" data-wow-delay="2s">
 				<button data-target="#choose" className="scroll-down tj-scroll-btn">
 					<span>
 						<i className="tji-arrow-down-long"></i>
@@ -96,7 +96,7 @@ const Hero = () => {
 					Scroll Down
 				</button>
 			</div>
-		</section>
+		</section >
 	);
 };
 
