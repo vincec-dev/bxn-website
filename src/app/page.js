@@ -6,6 +6,8 @@ import About1 from "@/components/sections/about/About1";
 import Brands1 from "@/components/sections/brands/Brands1";
 import Features from "@/components/sections/features/Features";
 import Hero from "@/components/sections/hero/Hero";
+import BackToTop from "@/components/shared/others/BackToTop";
+import HeaderSpace from "@/components/shared/others/HeaderSpace";
 
 const Blogs1 = dynamic(() => import("@/components/sections/blogs/Blogs1"));
 const Contact2 = dynamic(() => import("@/components/sections/contacts/Contact2"));
@@ -15,8 +17,6 @@ const Funfact1 = dynamic(() => import("@/components/sections/funfacts/Funfact1")
 const Portfolios1 = dynamic(() => import("@/components/sections/portfolios/Portfolios1"));
 const Services1 = dynamic(() => import("@/components/sections/services/Services1"));
 const Testimonials1 = dynamic(() => import("@/components/sections/testimonials/Testimonials1"));
-import BackToTop from "@/components/shared/others/BackToTop";
-import HeaderSpace from "@/components/shared/others/HeaderSpace";
 
 const ClientWrapper = dynamic(
 	() => import("@/components/shared/wrappers/ClientWrapper"),
