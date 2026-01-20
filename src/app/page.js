@@ -9,6 +9,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/thumbs";
 import "./assets/css/animate.min.css";
+import "./assets/css/bootstrap.min.css";
 import "./assets/css/font-awesome-pro.min.css";
 import "./assets/css/glightbox.min.css";
 import "./assets/css/meanmenu.css";

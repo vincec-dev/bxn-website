@@ -8,7 +8,7 @@ import "react-range-slider-input/dist/style.css";
 // import "swiper/css/thumbs";
 // import "./assets/css/animate.min.css";
 import "./assets/css/bexon-icons.css";
-import "./assets/css/bootstrap.min.css";
+// import "./assets/css/bootstrap.min.css";
 // import "./assets/css/font-awesome-pro.min.css";
 // import "./assets/css/glightbox.min.css";
 // import "./assets/css/meanmenu.css";
