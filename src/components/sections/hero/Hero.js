@@ -7,13 +7,13 @@ const Hero = () => {
 			<div className="banner-area">
 				<div className="banner-left-box">
 					<div className="banner-content">
-						<span className="sub-title" data-wow-delay=".2s">
+						<span className="sub-title">
 							<i className="tji-excellence"></i> Recognized for Excellence
 						</span>
 						<h1 className="banner-title">
 							Driving Excellence Through Evolution and <span>Trust.</span>
 						</h1>
-						<div className="banner-desc-area" data-wow-delay=".7s">
+						<div className="banner-desc-area">
 							<Link className="banner-link" href="/about">
 								<span>
 									<i className="tji-arrow-right-big"></i>
@@ -26,7 +26,7 @@ const Hero = () => {
 						</div>
 					</div>
 					<div className="banner-shape">
-						<Image src="/images/shape/pattern-bg.webp" alt="" width={500} height={500} />
+						<Image src="/images/shape/pattern-bg.webp" alt="" width={500} height={500} priority />
 					</div>
 				</div>
 				<div className="banner-right-box">
@@ -39,13 +39,14 @@ const Hero = () => {
 							width={945}
 							height={793}
 							sizes="(max-width: 768px) 100vw, 50vw"
+							quality={60}
 						/>
 					</div>
 					<div className="box-area">
 						<div className="customers-box">
 							<div className="customers">
 								<ul>
-									<li data-wow-delay=".5s">
+									<li>
 										<Image
 											src="/images/testimonial/client-1.webp"
 											alt=""
@@ -53,7 +54,7 @@ const Hero = () => {
 											height={89}
 										/>
 									</li>
-									<li data-wow-delay=".6s">
+									<li>
 										<Image
 											src="/images/testimonial/client-2.webp"
 											alt=""
@@ -61,7 +62,7 @@ const Hero = () => {
 											height={89}
 										/>
 									</li>
-									<li data-wow-delay=".7s">
+									<li>
 										<Image
 											src="/images/testimonial/client-3.webp"
 											alt=""
@@ -69,7 +70,7 @@ const Hero = () => {
 											height={89}
 										/>
 									</li>
-									<li data-wow-delay=".8s">
+									<li>
 										<span>
 											<i className="tji-plus"></i>
 										</span>
@@ -78,11 +79,10 @@ const Hero = () => {
 							</div>
 							<div
 								className="customers-number"
-								data-wow-delay=".5s"
 							>
 								30K
 							</div>
-							<h6 className="customers-text" data-wow-delay=".5s">
+							<h6 className="customers-text">
 								Happy customer we have world-wide.
 							</h6>
 						</div>
