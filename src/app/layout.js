@@ -10,10 +10,10 @@ import "react-range-slider-input/dist/style.css";
 import "./assets/css/bexon-icons.css";
 import "./assets/css/bootstrap.min.css";
 import "./assets/css/font-awesome-pro.min.css";
-import "./assets/css/glightbox.min.css";
-import "./assets/css/meanmenu.css";
-import "./assets/css/nice-select2.css";
-import "./assets/css/odometer-theme-default.css";
+// import "./assets/css/glightbox.min.css";
+// import "./assets/css/meanmenu.css";
+// import "./assets/css/nice-select2.css";
+// import "./assets/css/odometer-theme-default.css";
 import "./globals.scss";
 
 const bodyFont = Mona_Sans({

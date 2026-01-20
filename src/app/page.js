@@ -9,6 +9,10 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/thumbs";
 import "./assets/css/animate.min.css";
+import "./assets/css/glightbox.min.css";
+import "./assets/css/meanmenu.css";
+import "./assets/css/nice-select2.css";
+import "./assets/css/odometer-theme-default.css";
 
 import About1 from "@/components/sections/about/About1";
 import Brands1 from "@/components/sections/brands/Brands1";
