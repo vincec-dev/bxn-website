@@ -26,9 +26,9 @@ import tjZoomInScroll from "@/libs/tjZoomInScroll";
 import { useEffect } from "react";
 const ClientWrapper = () => {
 	useEffect(() => {
-		import("wow.js").then(({ default: WOW }) => {
-			new WOW().init();
-		});
+		// import("wow.js").then(({ default: WOW }) => {
+		// 	new WOW().init();
+		// });
 		smoothScrollToTop();
 		const cleanup = tjMagicCursorAnimation();
 		return () => {
@@ -37,26 +37,26 @@ const ClientWrapper = () => {
 	}, []);
 	useGSAP((context, contextSafe) => {
 		initSmoothScroller();
-		tjRightSwipeAnimation();
-		tjLeftSwipeAnimation();
-		titleAnim();
-		titleAnim2();
-		titleAnim3();
-		textReavealAnim();
+		// tjRightSwipeAnimation();
+		// tjLeftSwipeAnimation();
+		// titleAnim();
+		// titleAnim2();
+		// titleAnim3();
+		// textReavealAnim();
 		sidebarSticky();
-		arrangeAnim();
-		arrangeAnim2();
-		animateInvertText();
-		fadeInRightOnScrollAnim();
+		// arrangeAnim();
+		// arrangeAnim2();
+		// animateInvertText();
+		// fadeInRightOnScrollAnim();
 		onePageNavAnim(contextSafe);
 		progressBar();
-		tjStackAnimation();
+		// tjStackAnimation();
 		tjScrollSlider();
-		tjStackAnimation2();
-		tjImageParallex();
+		// tjStackAnimation2();
+		// tjImageParallex();
 		tjProgressAnimation();
-		tjZoomInScroll();
-		tjStackAnimation3();
+		// tjZoomInScroll();
+		// tjStackAnimation3();
 	});
 	return null;
 };

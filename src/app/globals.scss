@@ -137,3 +137,19 @@
 // @forward "./assets/sass/ecommerce/woo-product";
 // @forward "./assets/sass/ecommerce/woo-details";
 // @forward "./assets/sass/ecommerce/woo-wishlist";
+
+/* FORCE DISABLE ANIMATIONS */
+.wow,
+.animated,
+.title-anim,
+.fadeInUp,
+.fadeInDown,
+.fadeInLeft,
+.fadeInRight,
+[data-wow-delay] {
+    visibility: visible !important;
+    opacity: 1 !important;
+    animation: none !important;
+    transform: none !important;
+    transition: none !important;
+}
