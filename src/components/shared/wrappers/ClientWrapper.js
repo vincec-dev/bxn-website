@@ -14,9 +14,9 @@ const ClientWrapper = () => {
 		// 	new WOW().init();
 		// });
 		smoothScrollToTop();
-		const cleanup = tjMagicCursorAnimation();
+		// const cleanup = tjMagicCursorAnimation();
 		return () => {
-			if (cleanup) cleanup();
+			// if (cleanup) cleanup();
 		};
 	}, []);
 	useGSAP((context, contextSafe) => {
@@ -35,10 +35,10 @@ const ClientWrapper = () => {
 		onePageNavAnim(contextSafe);
 		progressBar();
 		// tjStackAnimation();
-		tjScrollSlider();
+		// tjScrollSlider();
 		// tjStackAnimation2();
 		// tjImageParallex();
-		tjProgressAnimation();
+		// tjProgressAnimation();
 		// tjZoomInScroll();
 		// tjStackAnimation3();
 	});
