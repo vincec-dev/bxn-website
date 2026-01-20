@@ -38,6 +38,7 @@ const Hero = () => {
 							priority
 							width={945}
 							height={793}
+							sizes="(max-width: 768px) 100vw, 50vw"
 						/>
 					</div>
 					<div className="box-area">

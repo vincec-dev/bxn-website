@@ -2,6 +2,14 @@ import Footer from "@/components/layout/footer/Footer";
 import Header from "@/components/layout/header/Header";
 import dynamic from "next/dynamic";
 
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/effect-fade";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/thumbs";
+import "./assets/css/animate.min.css";
+
 import About1 from "@/components/sections/about/About1";
 import Brands1 from "@/components/sections/brands/Brands1";
 import Features from "@/components/sections/features/Features";
