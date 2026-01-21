@@ -6,14 +6,17 @@ START: Hero CSS
 .tj-banner-section {
 	position: relative;
 }
+
 .banner-area {
 	display: flex;
 	flex-wrap: wrap;
 	min-height: 792px;
+
 	@media #{$xl, $lg} {
 		min-height: 700px;
 	}
 }
+
 .banner-left-box {
 	background-color: var(--tj-color-theme-dark);
 	border-radius: 12px;
@@ -25,6 +28,7 @@ START: Hero CSS
 	display: flex;
 	align-items: center;
 	overflow: hidden;
+
 	&::before {
 		content: "";
 		position: absolute;
@@ -40,13 +44,16 @@ START: Hero CSS
 		z-index: -1;
 		backdrop-filter: blur(10px);
 	}
+
 	@media #{$xxl} {
 		padding-inline-end: 40px;
 	}
+
 	@media #{$xl, $lg} {
 		padding-inline-start: 50px;
 		padding-inline-end: 40px;
 	}
+
 	@media #{$md, $sm, $xs} {
 		width: 100%;
 		margin-inline-end: 0;
@@ -54,10 +61,12 @@ START: Hero CSS
 		padding: 60px 0;
 	}
 }
+
 .banner-content {
 	max-width: 635px;
 	width: 100%;
 	margin-inline-start: auto;
+
 	.sub-title {
 		display: inline-flex;
 		align-items: center;
@@ -72,36 +81,45 @@ START: Hero CSS
 		padding: 6px 10px;
 		margin-bottom: 20px;
 		border-radius: 4px;
+
 		i {
 			color: var(--tj-color-theme-primary);
 			font-size: 22px;
 		}
 	}
+
 	.banner-title {
 		color: var(--tj-color-common-white);
 		line-height: 1.135;
 		margin-bottom: 15px;
+
 		span {
 			display: inline-block;
 			color: var(--tj-color-theme-primary);
 			font-weight: var(--tj-fw-medium);
 		}
+
 		@media #{$xxl} {
 			font-size: 68px;
 		}
+
 		@media #{$xl} {
 			font-size: 58px;
 		}
+
 		@media #{$lg} {
 			font-size: 50px;
 		}
+
 		@media #{$md, $sm} {
 			font-size: 45px;
 		}
+
 		@media #{$xs} {
 			font-size: 38px;
 		}
 	}
+
 	.banner-link {
 		font-size: 75px;
 		color: var(--tj-color-common-white);
@@ -109,9 +127,11 @@ START: Hero CSS
 		line-height: 1;
 		padding: 10px 30px 15px 0;
 		border-inline-end: 1px dashed var(--tj-color-border-2);
+
 		span {
 			overflow: hidden;
 		}
+
 		i {
 			display: inline-flex;
 			line-height: 1;
@@ -119,17 +139,21 @@ START: Hero CSS
 			transition: all 0.3s ease-out;
 			text-shadow: -120px 0 0;
 		}
+
 		&:hover {
 			i {
 				transform: rotate(-45deg) translateX(120px);
 			}
 		}
+
 		@media #{$xl} {
 			font-size: 60px;
 		}
+
 		@media #{$lg} {
 			font-size: 50px;
 		}
+
 		@media #{$md, $sm, $xs} {
 			font-size: 45px;
 		}
@@ -146,27 +170,34 @@ START: Hero CSS
 		margin-top: 40px;
 		margin-inline-end: 57px;
 		margin-inline-start: auto;
+
 		.banner-desc {
 			padding-inline-start: 44px;
+
 			@media #{$xs} {
 				padding-inline-start: 35px;
 			}
 		}
+
 		@media #{$xl} {
 			margin-inline-end: 20px;
 		}
+
 		@media #{$sm, $xs} {
 			order: 1;
 		}
+
 		@media (max-width: 480px) {
 			margin-inline-end: 0;
 		}
 	}
+
 	.banner-desc {
 		color: var(--tj-color-text-body-2);
 		font-size: 18px;
 		line-height: 1.444;
 		max-width: 517px;
+
 		@media #{$xl, $xs} {
 			font-size: 16px;
 		}
@@ -176,6 +207,7 @@ START: Hero CSS
 		max-width: 565px;
 		padding-inline-start: 10px;
 	}
+
 	@media #{$lg} {
 		padding-inline-start: 10px;
 	}
@@ -186,12 +218,14 @@ START: Hero CSS
 		padding: 0 15px;
 	}
 }
+
 .banner-img {
 	width: 100%;
 	height: 100%;
 	border-radius: 12px;
 	position: relative;
 	overflow: hidden;
+
 	img {
 		width: 100%;
 		height: 100%;
@@ -208,16 +242,19 @@ START: Hero CSS
 	height: 100%;
 	z-index: -1;
 	pointer-events: none;
+
 	img {
 		width: 100%;
 		height: 100%;
 	}
 }
+
 .banner-scroll {
 	position: absolute;
 	inset-inline-start: 38px;
 	bottom: 50px;
 	z-index: 5;
+
 	.scroll-down {
 		color: var(--tj-color-common-white);
 		line-height: 1;
@@ -227,6 +264,7 @@ START: Hero CSS
 		align-items: center;
 		gap: 12px;
 		opacity: 0.5;
+
 		span {
 			display: inline-flex;
 			align-items: center;
@@ -238,6 +276,7 @@ START: Hero CSS
 			border-radius: 50%;
 			transform: rotate(90deg);
 		}
+
 		&:hover {
 			opacity: 1;
 		}
@@ -246,12 +285,15 @@ START: Hero CSS
 	@media #{$xxl} {
 		inset-inline-start: 23px;
 	}
+
 	@media #{$xl, $lg, $md} {
 		inset-inline-start: 16px;
 	}
+
 	@media #{$md} {
 		bottom: 150px;
 	}
+
 	@media #{$sm, $xs} {
 		display: none;
 	}
@@ -261,11 +303,14 @@ START: Hero CSS
 	width: 50%;
 	position: relative;
 	min-height: 390px;
+
 	@media #{$md, $sm, $xs} {
 		width: 100%;
 	}
+
 	.box-area {
 		max-width: 261px;
+
 		@media #{$xs} {
 			max-width: 200px;
 		}
@@ -276,35 +321,43 @@ START: Hero CSS
 	background-color: var(--tj-color-common-white);
 	border-radius: 10px;
 	padding: 30px 25px;
+
 	@media #{$sm, $xs} {
 		padding: 25px 18px 20px;
 	}
 }
+
 .customers {
 	ul {
 		display: inline-flex;
 		list-style: none;
+
 		li {
 			line-height: 1;
 			margin-inline-start: -15px;
+
 			img {
 				width: 59px;
 				height: 59px;
 				background-color: var(--tj-color-common-white);
 				border-radius: 50%;
 				box-shadow: 0 0 0 2px var(--tj-color-common-white);
+
 				@media #{$xl, $lg, $sm} {
 					width: 50px;
 					height: 50px;
 				}
+
 				@media #{$xs} {
 					width: 40px;
 					height: 40px;
 				}
 			}
+
 			&:first-child {
 				margin-inline-start: 0;
 			}
+
 			&:last-child {
 				span {
 					width: 59px;
@@ -317,26 +370,31 @@ START: Hero CSS
 					justify-content: center;
 					font-size: 22px;
 					box-shadow: 0 0 0 2px var(--tj-color-common-white);
+
 					i {
 						display: inline-flex;
 						line-height: 1;
 					}
+
 					@media #{$xl, $lg, $sm} {
 						width: 50px;
 						height: 50px;
 					}
+
 					@media #{$xs} {
 						width: 40px;
 						height: 40px;
 					}
 				}
 			}
+
 			@media #{$xs} {
 				margin-inline-start: -16px;
 			}
 		}
 	}
 }
+
 .customers-number {
 	color: var(--tj-color-theme-dark);
 	font-size: 58px;
@@ -345,15 +403,18 @@ START: Hero CSS
 	font-family: var(--tj-ff-heading);
 	font-weight: var(--tj-fw-sbold);
 	padding: 45px 0 13px 0;
+
 	@media #{$xl, $lg} {
 		font-size: 50px;
 		padding: 25px 0 13px 0;
 	}
+
 	@media #{$sm, $xs} {
 		font-size: 40px;
 		padding: 20px 0 10px 0;
 	}
 }
+
 .customers-text {
 	color: var(--tj-color-text-body);
 	font-size: 16px;
@@ -364,7 +425,7 @@ START: Hero CSS
 }
 
 // Banner section 2
-.tj-banner-section-2 {
+/* .tj-banner-section-2 {
 	background-color: var(--tj-color-theme-bg);
 	padding-top: 125px;
 	padding-bottom: 55px;
@@ -652,6 +713,6 @@ START: Hero CSS
 			margin: 40px 0;
 		}
 	}
-}
+} */
 
 /* !END: Hero CSS */
